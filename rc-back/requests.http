@@ -1,0 +1,41 @@
+### App Request
+
+GET http://localhost:3000/articles/5
+
+
+
+#### Response
+GET http://localhost:3000/news/
+
+### Request
+GET http://localhost:3000/articles/
+
+### Response
+POST http://localhost:3000/news
+Content-Type: application/json
+
+{
+  "title": "New Article",
+  "content": "This is the content of the new article.",
+  "type": "news",
+  "isActive": true,
+  "metadata": {
+    "picturesList": ["image1.jpg", "image2.jpg"]
+  }
+}
+
+
+#### Request
+POST http://localhost:3000/videos
+Content-Type: application/json
+
+{
+  "title": "New Video",
+  "content": "This is the content of the new video.",
+  "type": "videos",
+  "isActive": true,
+  "metadata": {
+    "picturesList": ["video1.jpg", "video2.jpg"],
+    "videoLink": "https://example.com/video.mp4"
+  }
+}
